@@ -1,0 +1,128 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "index",
+				"app-plus":{
+					"scrollIndicator":"none",
+					"titleNView":{
+						"searchInput":{
+							"align":"center",
+							"borderRadius":"10rpx",
+							"disabled":"true",
+							"backgroundColor":"#F7F7F7",
+							"placeholder":"搜索糗事",
+							"placeholderColor":"#CCCCCC"
+						},
+						"buttons":[
+							{
+								"float":"left",
+								"color":"#FF9D29",
+								"colorPressed": "#BBBBBB",
+								"fontSize":"44rpx",
+								"text":"\ue609",
+								"fontSrc":"static/font/icon.ttf"
+							},
+							{
+								"float":"right",
+								"fontSize":"44rpx",
+								"color":"#444444",
+								"colorPressed": "#BBBBBB",
+								"fontSrc":"static/font/icon.ttf",
+								"text":"\ue653"
+							}
+						]
+					}
+				}
+			}
+		}
+	    ,{
+            "path" : "pages/paper/paper",
+            "style" : {
+				"navigationBarTitleText": "paper"
+			}
+        }
+        ,{
+            "path" : "pages/home/home",
+            "style" : {
+				"navigationBarTitleText": "home"
+			}
+        }
+        ,{
+            "path" : "pages/news/news",
+            "style" : {
+				"navigationBarTitleText": "news"
+			}
+        }
+        ,{
+            "path" : "pages/search-index/search-index",
+            "style" : {
+				"app-plus":{
+					"bounce":"none",
+					"scrollIndicator":"none",
+					"titleNView":{
+						"autoBackButton":"false",
+						"searchInput":{
+							"align":"left",
+							"backgroundColor":"#F7F7F7",
+							"placeholderColor":"#CCCCCC",
+							"borderRadius":"10rpx",
+							"placeholder":"搜索糗事",
+							"disabled":"false"
+						},
+						"buttons":[{
+							"float":"right",
+							"fontSize":"32rpx",
+							"color":"#444444",
+							"colorPressed": "#BBBBBB",
+							"text":"取消"
+						}]
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/public-index/public-index",
+            "style" : {
+				"app-plus":{
+					"titleNView":"false"
+				}
+			}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#FFF",
+		"backgroundColor": "#FFF"
+	},
+	"tabBar": {
+	    "color": "#B7B7B7",
+	    "selectedColor": "#FEE535",
+	    "borderStyle": "black",
+		"backgroundColor":"#FFFFFF",
+	    "list": [{
+	        "pagePath": "pages/index/index",
+			"text": "糗事",
+	        "iconPath": "static/tabbar/index.png",
+	        "selectedIconPath": "static/tabbar/indexed.png"
+	        
+	    }, {
+	        "pagePath": "pages/news/news",
+	        "iconPath": "static/tabbar/news.png",
+	        "selectedIconPath": "static/tabbar/newsed.png",
+	        "text": "动态"
+	    },{
+	        "pagePath": "pages/paper/paper",
+	        "iconPath": "static/tabbar/paper.png",
+	        "selectedIconPath": "static/tabbar/papered.png",
+	        "text": "小纸条"
+	    },{
+	        "pagePath": "pages/home/home",
+	        "iconPath": "static/tabbar/home.png",
+	        "selectedIconPath": "static/tabbar/homeed.png",
+	        "text": "我的"
+	    }]
+	}
+}

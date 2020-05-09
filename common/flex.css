@@ -1,0 +1,12 @@
+.u-f,.u-f-ac,.u-f-jac,.u-f-jub{
+	display: flex;
+}
+.u-f-ac,.u-f-jac,.u-f-jub{
+	align-items: center;
+}
+.u-f-jac{
+	justify-content: center;
+}
+.u-f-jub{
+	justify-content: space-between;
+}
